@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dari dapid</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background: linear-gradient(120deg, #e0c3fc, #8ec5fc);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .quiz-container {
+            width: 100%;
+            max-width: 700px;
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #4a4a4a;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        button {
+            display: block;
+            width: 100%;
+            background-color: #f408f0;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #55abed;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Haloo Evelyn! ini David hahaha</h1>
+        <img src="image\sigma.gif"> <h6>*its me with rizz</h6>
+        <audio autoplay loop hidden>
+            <source src="audio\LIRIK Reff lagu wirang-Denny caknan. yang lagi trending trending1.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="bg-audio" autoplay loop muted>
+            <source src="audio\LIRIK Reff lagu wirang-Denny caknan. yang lagi trending trending1.mp3" type="audio/mpeg">
+        </audio>
+        <script>
+            document.body.addEventListener('click', () => {
+                const audio = document.getElementById('bg-audio');
+                audio.muted = false; // Aktifkan audio
+                audio.play();
+            });
+        </script>
+        <audio autoplay loop>
+            <source src="audio\LIRIK Reff lagu wirang-Denny caknan. yang lagi trending trending1.mp3" type="audio/mpeg">
+            <source src="audio/background-music.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        
+        
+    <form action="submit.php" method="POST">
+            <!-- Pertanyaan 1 -->
+            <div class="question">
+                <label>1. di medan kah kau pada tanggal 26 sampe 30? 🤔</label>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="iya :)" required> iya :)</label>
+                    <label><input type="radio" name="q1" value="enggak :(" required> enggak :(</label>
+                </div>
+                <h3>kalau iya... yeeeeyyy</h3>
+                <img src="image\yaay.gif">
+                <h3>kalo enggak, NOOOOOOOOOOOOOOOOOOOOOOOOOO 😭😭😭😭😿</h3>
+                <img src="image\ambatuka,.gif">
+
+            </div>
+            <!-- Pertanyaan 2 -->
+            <div class="question">
+                <label>2. nahh, kalau semisal di medan, kita jalan-jalan yokk </label>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="iyaa :)" required> iyaa :)</label>
+                    <label><input type="radio" name="q2" value="ayokk :)" required> ayokk :)</label>
+                    <label><input type="radio" name="q2" value="yess :)" required> yess :)</label>
+                    <img src="image\narji.jpg">
+                </div>
+            </div>
+            <!-- Pertanyaan 3 -->
+            <div class="question">
+                <label>3. kalau semisal rencananya jadi... kita ngapain eve?? 🤔🤔💭💭</label>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="nonton 🍿🎥" required> nonton 🍿🎥</label>
+                    <label><input type="radio" name="q3" value="jalan-jalan keliling (ga aman)" required> jalan-jalan keliling (ga aman)</label>
+                    <img src=image\putin-walk-swag-walk.gif>
+                </div>
+            </div>
+            <!-- Pertanyaan 4 -->
+            <div class="question">
+                <label>4. makan apa kita?</label> 
+                <input type="text" name="q4" required>
+                <img src="image\narji makan.jpg">
+            </div>  
+            <!-- Pertanyaan 5 -->
+            <div class="question">
+                <label>5. nonton film apa kita eve? film mu lahh</label>
+                <input type="text" name="q5" required>
+                <img src="image\movies-watching-movie.gif">
+            </div>
+            <!-- Pertanyaan 6 -->
+            <div class="question">
+                <label>6. sayang kau samaku eve? 🤔😍🥰🥰😘😘😘😘😘😘</label>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="sayanggggg 😍😍" required> sayanggggg 😍😍</label>
+                    <label><input type="radio" name="q6" value="sayang kalii 🥰🥰🥰🥰🥰🥰" required> sayang kalii 🥰🥰🥰🥰🥰🥰</label>
+                    <label><input type="radio" name="q6" value="saaayaaangggg kaliiiiiii 😘😻😻😻" required> saaayaaangggg kaliiiiiii 😘😻😻😻</label>
+             <img src="image\akuh.jpg"> <img src="image\kamuh.jpg">
+                </div>
+            </div>
+            <!-- Pertanyaan 7 -->
+            <div class="question">
+                <label>7. selamat natal/otw natal evee!! kirim salam sama nantulang itu yaa 🎄🧑‍🎄🧑‍🎄 </label>
+                <input type="text" name="q7" required>
+                <img src="image\get-jolly-with-it-christmas.gif">
+            </div>
+            <!-- Pertanyaan 8 -->
+            <div class="question">
+                <label>8. ada hadiahku nanti samamu... semoga kau suka yaa 😉😉</label>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="sukaa 🥰🥰🥰🥰🥰" required> sukaa 🥰🥰🥰🥰🥰</label>
+                    <label><input type="radio" name="q8" value="hoekkk 🤢🤢🤮🤮" required> hoekkk 🤢🤢🤮🤮</label>
+                    <img src="image\ambalabu.jpg">
+
+                    <h5>btw cape cok ngoding buat web ini 😭😭</h5>
+                    <h5>ohhh iya eve, klo misalnya ada error 405, ini mungkin terjadi krn gateway yang error atau ada code ku yang salah</h5>
+                    <h5>kirim ke...............</h5>
+                    <a href="https://forms.gle/EFGu7Btt2t7Z9CaV7">isi kesini aj lah eve klo error pas submit </a>
+
+                </div>
+            </div>
+            <button type="submit">Kirim ke David 😎😎</button>
+        </form>
+    </div>
+</body>
+</html>
